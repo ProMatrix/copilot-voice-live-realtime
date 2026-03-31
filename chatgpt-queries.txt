@@ -1,0 +1,7 @@
+I'm looking for a speech to text extension for Visual Studio Code . It must use Google's voice technology.
+Similar to what is used in Google Docs, but it should work within Visual Studio Code on Windows. I want to be able to dictate code and have it transcribed accurately using Google's voice recognition technology.
+What do you recommend?
+
+Is it possible to edit a Google Document in Visual Studio Code?
+
+https://chatgpt.com/c/69cc3061-1bb4-832e-a4e1-6d3118adbd61

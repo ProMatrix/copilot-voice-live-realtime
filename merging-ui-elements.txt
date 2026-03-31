@@ -1,0 +1,27 @@
+There are two angular projects in this workspace: azure-voice-live (Microsoft technology), ai-realtime-framework(Google technology).
+That will not be easy because my goal is bring these two technologies into a single library as much as possible and then use that library in both projects.
+So I want to be able to share as much code as possible between the two projects, while still being able to take advantage of the unique features of each technology.
+
+A good starting point would be to concentrate on the UI elements for both projects.
+Use Project: azure-voice-live as the default for the behavior. That means if you need to decide which way to choose the look and feel, choose project: azure-voice-live.
+
+For the UI elements, I want to create a common library that both projects can use. This library will contain the shared components and styles that can be used in both projects. I will also create separate components for any unique features that are specific to each technology.
+This way, I can maintain a consistent look and feel across both projects while still allowing for the unique features of each technology to shine through. I will also make sure to keep the dependencies to a minimum, so that the library can be easily integrated into both projects without causing any issues.
+The project: ai-realtime-framework uses the folder: geminiLive for the integration code.
+The project: azure-voice-live uses the folder: aiLive for the integration code.
+
+I think we should have two libraries one for the UX and the other for the LLM integration.
+The UX library will contain all the shared UI components and styles, while the LLM integration library will contain the code for integrating with the language models for both technologies.
+This way, we can keep the concerns separated and make it easier to maintain and update each library independently. We can also ensure that the UX library is focused on providing a consistent user experience across both projects, while the LLM integration library can focus on providing the necessary functionality for integrating with the language models.
+
+Itemize the steps to create the shared UX library and the LLM integration library, and how to integrate them into both projects.
+1. Create a new Angular library for the shared UX components and styles. This can be done using the Angular CLI command: `ng generate library shared-ux`.
+2. Create a new Angular library for the LLM integration code. This can be done using the Angular CLI command: `ng generate library llm-integration`.
+3. In the shared UX library, create the necessary components and styles that will be used in both projects. This can include things like buttons, input fields, and other common UI elements.
+4. In the LLM integration library, create the necessary code for integrating with the language models for both technologies. This can include things like API calls, authentication, and other necessary functionality for integrating with the language models.
+5. Once the libraries are created, we can integrate them into both projects. This can be done by adding the libraries as dependencies in the `package.json` files of both projects and then importing the necessary components and functionality from the libraries into the respective projects.
+6. In the azure-voice-live project, we can import the shared UX components and styles from the shared UX library and use them in the UI. We can also import the necessary functionality from the LLM integration library to integrate with the language models for Microsoft technology.
+7. In the ai-realtime-framework project, we can also import the shared UX components and styles from the shared UX library and use them in the UI. We can also import the necessary functionality from the LLM integration library to integrate with the language models for Google technology.
+8. Finally, we can test both projects to ensure that the shared UX components and styles are working correctly and that the LLM integration is functioning as expected for both technologies. We can also make any necessary adjustments to the libraries as needed to ensure that they are providing the necessary functionality and a consistent user experience across both projects.
+
+Examine these requirements and respond with clarification needed before proceeding with this implementation.

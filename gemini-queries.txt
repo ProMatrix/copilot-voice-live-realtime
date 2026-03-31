@@ -1,0 +1,19 @@
+Google technology is much better at voice assistant editing. I want to be able to edit a Google document on Windows, using Google's technology for voice assist.
+Is it possible to edit a Google document directly on Windows, or is there a way make it seem like it's within Windows even though it's being edited remotely.
+
+I don't care about the Google voice commands formatting, deleting, navigating.
+
+And I want the simplest approach and the lease dependencies.
+Now what is your recommendation?
+
+https://gemini.google.com/app/7b25244f28d0bae2
+
+Is it possible to edit a Google Doc directly on Windows 11?
+
+https://gemini.google.com/app/2f228652b23618ef
+
+I'm using the edge browser extension in Visual Studio Code.
+Most things work as expected. However I've never been able to get the microphone to work.
+Do you have any recommendations for getting the microphone to work in the Edge browser extension for Visual Studio Code?
+
+https://chatgpt.com/c/69cc36fd-a91c-832e-b963-d7cff50df94e
