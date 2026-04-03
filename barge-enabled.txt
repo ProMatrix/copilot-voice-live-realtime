@@ -1,0 +1,9 @@
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: developer-assistant.json
+The url for the host-gemini-voice project: http://localhost:4200/?profile=developer-assistant
+
+I believe the audio is working for both the assistant and the user.
+One of the features of this API is to allow the to barge in on the assistant's audio output. This means that the user can start speaking while the assistant is still talking, and the assistant should recognize this and wait for the user to finish before responding accordingly.
+This is not working as as expected.
+
+Use the project: ai-realtime-framework as a working example how to identify and fix the issue.

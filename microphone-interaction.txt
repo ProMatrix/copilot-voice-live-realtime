@@ -1,0 +1,21 @@
+
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: developer-assistant.json
+The url for the host-gemini-voice project: http://localhost:4200/?profile=developer-assistant
+
+The audio functionality for the assistant works as expected.
+However the audio for the user is not working as expected. 
+You have fixed this problem before and I think it's been reintroduced into the project: host-gemini-voice.
+The clue and what I believe helped us last time was that I told you that the assistant (gemini agent)was complaining that the audio that she's hearing is garbled. 
+Or maybe she said audio was choppy. One of those anyway I think it starts out OK but gets worse over time.
+Fix this problem... again. I think it has to do with the way the audio is being captured and sent to the assistant.
+Please investigate and resolve this issue. It may involve reviewing the audio capture and transmission code for the project: ai-realtime-framework to identify the issue.
+
+I don't know if this changes anything you've already done but I think I remember that you fixed this problem already in the project: ai-realtime-framework.
+So using it as an example is definitely advisable. 
+
+
+
+
+
+

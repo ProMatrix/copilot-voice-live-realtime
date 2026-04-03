@@ -1,0 +1,38 @@
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: developer-assistant.json
+The url for the host-gemini-voice project: http://localhost:4200/?profile=developer-assistant
+
+One of the features of this API is to facilitate the user to share their screen with the assistant. This allows the assistant to see what the user is seeing and provide more relevant assistance based on the context of the user's screen.
+This is not working as as expected.
+
+Use the project: ai-realtime-framework as a working example how to identify and fix the issue.
+
+The Screen Sharing feature works but not as expected. The assistant is not receiving the screen data correctly, which is likely due to an issue in how the image data is being sent from the frontend to the backend.
+To identify and fix the issue with the screen sharing feature in the host-gemini-voice project, we can follow these steps:  
+1. **Review the Frontend Code**: Check the code responsible for capturing the screen data and sending it to the backend. Ensure that the image data is being captured correctly and that it is being sent in the correct format (e.g., base64 string with the appropriate MIME type).
+2. **Check the Backend Code**: Review the backend code that receives the screen data. Ensure that it is correctly parsing the incoming data and that it is compatible with the format being sent from the frontend.
+3. **Compare with ai-realtime-framework**: Look at how the screen sharing feature is implemented in the ai-realtime-framework project. Compare the code for capturing and sending screen data in both projects to identify any discrepancies or missing pieces in the host-gemini-voice implementation.
+4. **Test the Changes**: After making any necessary changes to the code, test the screen sharing feature to ensure that the assistant is now receiving the screen data correctly and that it is able to provide relevant assistance based on the user's screen context.
+5. **Debugging**: If the issue persists, use debugging tools to trace the flow of data from the frontend to the backend. Check for any errors or warnings in the console that might indicate where the problem is occurring.
+By following these steps, you should be able to identify and fix the issue with the screen sharing feature in the host-gemini-voice project, ensuring that the assistant can receive and utilize the screen data effectively.
+
+There are significant processes that need to be functional for the screen sharing feature to work correctly. These include:
+1. **Capturing Screen Data**: The frontend must be able to capture the screen data accurately. This typically involves using the Screen Capture API to get a stream of the user's screen and then converting that stream into a format that can be sent to the backend (e.g., base64 encoded images).
+2. **Sending Data to Backend**: The frontend must send the captured screen data to the backend in a way that the backend can understand. This usually involves making an API call or using a WebSocket connection to transmit the data.
+3. **Receiving and Processing Data on Backend**: The backend must be able to receive the screen data and process it correctly. This involves parsing the incoming data, validating it, and then using it to provide relevant assistance based on the content of the screen.
+4. **Providing Feedback to User**: The system should provide feedback to the user about the status of the screen sharing (e.g., whether it is active, if there are any errors, etc.) to ensure a good user experience.
+5. **Error Handling**: Both the frontend and backend should have robust error handling to manage any issues that arise during the screen sharing process, such as problems with capturing the screen, network issues when sending data, or errors in processing the data on the backend.
+Ensuring that all these processes are functioning correctly is crucial for the screen sharing feature to work as intended and for the assistant to be able to provide relevant assistance based on the user's screen context.
+
+This is all working as expected in the ai-realtime-framework project, so we can use that as a reference to identify any discrepancies in the host-gemini-voice project and make the necessary adjustments to ensure that the screen sharing feature works correctly.    
+Examine the code path and identify where to set break points to debug the issue. Focus on the methods responsible for sending the screen data from the frontend and receiving it on the backend. Look for any differences in how the data is being handled compared to the ai-realtime-framework project. Pay special attention to the format of the data being sent and received, as well as any error handling that may be in place.
+In the frontend code, you should set breakpoints in the method responsible for capturing the screen data and sending it to the backend. This is likely a method that converts the screen stream into a base64 encoded image and then sends it via an API call or WebSocket. In the backend code, set breakpoints in the method that receives the screen data, parses it, and processes it to provide assistance. This will allow you to trace the flow of data from the frontend to the backend and identify where the issue may be occurring. Additionally, compare these methods with their counterparts in the ai-realtime-framework project to spot any differences in implementation that could be causing the issue.
+
+provide some suggestions for breakpoints to set in the frontend and backend code to debug the screen sharing issue:
+1. **Frontend Breakpoints**:
+   - Set a breakpoint in the method that sets up the screen capture, and it may be named something about "video"
+   - Set a breakpoint in the method that captures the screen data (e.g., `captureScreen()` or similar) to ensure that the screen stream is being captured correctly.
+   - Set a breakpoint in the method that converts the screen stream into a base64 encoded image (e.g., `convertToBase64()`) to verify that the conversion is happening correctly and that the resulting data is in the expected format.
+   - Set a breakpoint in the method that sends the screen data to the backend (e.g., `sendScreenData()`) to check that the API call or WebSocket transmission is being made correctly and that the data being sent is accurate.
+
+   Examine the project: host-gemini-voice and determine why we don't hit the method: onSetupComplete()
