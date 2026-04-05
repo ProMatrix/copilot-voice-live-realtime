@@ -1,0 +1,26 @@
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: programming-essentials.json
+The url for the host-gemini-voice project: http://localhost:4200/?profile=programming-essentials
+
+When I click the startRecordingButton for this profile I get this error in the console:
+chunk-HVXOIT3V.js:78 
+ GET http://localhost:4200/assets/pdf.worker.min.mjs?import net::ERR_ABORTED 404 (Not Found)
+pdf-2-jpgs.ts:67 Error converting PDF to JPG: Error: Setting up fake worker failed: "Failed to fetch dynamically imported module: http://localhost:4200/assets/pdf.worker.min.mjs?import".
+    at pdf.mjs:15632:31
+    at _ZoneDelegate.invoke (zone.js:360:158)
+    at Object.onInvoke (_effect-chunk2.mjs:2516:25)
+    at _ZoneDelegate.invoke (zone.js:360:46)
+    at _ZoneImpl2.run (zone.js:127:35)
+    at zone.js:2066:30
+    at _ZoneDelegate.invokeTask (zone.js:386:171)
+    at _effect-chunk2.mjs:2364:49
+    at AsyncStackTaggingZoneSpec.onInvokeTask (_effect-chunk2.mjs:2364:30)
+    at _ZoneDelegate.invokeTask (zone.js:386:54)
+google-live-assistant.service.ts:675 [GeminiSessionService] Error during ai.live.connect() call: Error: Failed to convert PDF to JPG: Setting up fake worker failed: "Failed to fetch dynamically imported module: http://localhost:4200/assets/pdf.worker.min.mjs?import".
+    at pdf-2-jpgs.ts:68:11
+    at Generator.throw (<anonymous>)
+    at rejected (main.js:17:29)
+
+
+Examine the ai-realtime-framework project, you will not find this error anywhere in the code, so why am I seeing it now?
+Fix this problem!

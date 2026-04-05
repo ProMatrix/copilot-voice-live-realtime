@@ -1,0 +1,36 @@
+Put your attention on project: host-gemini-voice
+Here are the profiles that we are currently working on for this project:
+- developer-assistant.json
+- developer-researcher.json
+- microsoft-AI-discussion.json
+- programming-essentials.json
+You run one of these profiles by running the script: "serve:gemini"
+Then navigating to the url: http://localhost:4200/?profile=profile_name_here
+Where "profile_name_here" is the name of the profile you want to run without the .json extension.
+
+We fixed them many things along the way but then when we start fixing one profile another profile breaks.
+I don't know how we can work together unless we can test what we've already fixed to be sure we're not breaking something by fixing something else.
+By the way I in a text file the prompts that I've been using to fix these issues along the way so I previous prompts that I've sent in files in case you're ever interested you can find them in the same folder as "working-profiles.txt"
+How is it possible to test these profiles in a way that ensures that when we fix one profile we are not breaking another profile?
+
+This is probably a good example of one of test we always want to run.
+I think the business rule is that anytime that a is shared then we should calling this method: sendPeriodicImageData()
+We are not calling this method and that's that screen sharing is not working as expected. This is an example of one of those that we've in the past gotten to work and now it's broken.
+Another time we ran into this issue and I believe it was a problem with something that was trying to do a callback and that wasn't working. or something like that just use that with a grain salt.
+
+
+Examine why I am not hitting the console.log: 
+After I start the recording and do a screen share, I am not seeing the console.log statement in the sendPeriodicImageData() method
+    console.log('[ImageCaptureService] Attempting to send periodic image data.');
+ This suggests that the method is not being called as expected when the screen sharing is active. To investigate this issue, we should check the code that is responsible for initiating the screen sharing and ensure that it is correctly triggering the sendPeriodicImageData() method. We should also verify that the conditions for calling this method are being met (e.g., checking if recording is active, if the session is set up, and if image data is available). Additionally, we can add more console.log statements in the relevant parts of the code to trace the flow of execution and identify where it might be breaking down. By doing this, we can pinpoint why the sendPeriodicImageData() method is not being called and address the underlying issue to restore the functionality of screen sharing in the host-gemini-voice project.
+
+Concentrate on the profile: developer-researcher.json
+Clicking on the trash icon should delete the session and clear the chat history for that profile. This is not working as expected.
+To be deleted until click the Start Playback button then they reappear in the chat history. This suggests that the session is not being properly cleared when the trash icon is clicked, and that the chat history is not being updated accordingly. To fix this issue, we need to ensure that when the trash icon is clicked, the session data is deleted and the chat history is cleared immediately. This may involve adding logic to handle the deletion of session data and updating the chat history state to reflect the changes. Additionally, we should verify that any relevant UI components are re-rendering correctly after the session is deleted to ensure that the user sees an updated state with an empty chat history. By implementing these changes, we can ensure that clicking the trash icon works as intended and provides a better user experience for managing sessions in the developer-researcher profile.
+Who has something to do with the profile flag: "clear_session_on_startup": false,
+It looks like the history is deleted however you click the start button you can see the previous dialog in the history.
+
+The session should reuse previous session and dialog history from past sessions that were not deleted.
+It used to work this way and that was how I could extend a previous session including dialog history.
+
+Question: Do we have a test that will ensure the assistant stops talking when the user clicks the pause button?
