@@ -1,0 +1,26 @@
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: programming-essentials.json
+But I think the problem is with any profile that uses a pdf document.
+However there is not a problem with other profiles that don't use the PDF such as: developer-assistant.json
+
+The problem has to do with the user's speech being choppy and interrupted.
+And the assistant says something like this: "I'm sorry, I had trouble hearing your last question due to the choppy speech. Could you please repeat it?"
+Also is a recurring problem so let's create some tests to ensure that there's no more problems.
+
+There is still a problem.
+The only clue that I can give you is that after the user stops speaking it takes several seconds before seeing the transcription. Then several seconds later before we get a response from the assistant. So it seems like the processing of the PDF is blocking the audio processing in some way.
+Feel free to put in some debugging console statements to try to figure out where the bottleneck is.
+
+Now I am getting this error:
+google-live-assistant.service.ts:924 WebSocket is already in CLOSING or CLOSED state.
+
+I feel like I should have mentioned that I know the PDF file has completely uploaded because all the pages seem to be loaded and that part of it stops. I can see it stops because there's a console that log that shows which page is converted.
+And still I have the problem with the choppy audio.
+
+Both profiles now seem work but not very well and they have the same behavior when it comes to the evaluating the user's audio. 
+I understand that I can't hear the user audio but I know it goes into the microphone and it looks like the audio level is correct and yet it comes back from the transcription very slow it kind of drips in and again this is the same problem with both of these profiles one that is using PDF and one that is not using PDF .
+developer-assistant.json Used to work fine but now it seems to have the same problem as the programming-essentials.json profile which is that the user audio is very choppy and slow to transcribe and then the assistant takes a long time to respond. So it seems like there might be some underlying issue with the audio processing or transcription that's affecting both profiles, regardless of whether they are using a PDF or not. 
+
+I think we should add some more logging to the audio processing and transcription parts of the code to try to identify where the bottleneck is. We should also consider adding some tests that simulate user audio input and check how long it takes for the transcription to come back and for the assistant to respond. This way we can ensure that any future changes don't cause regressions in this area.  We should also look into the WebSocket error that is occurring, as it might be related to the audio processing issue. It could be that the WebSocket connection is being closed prematurely, which could be causing delays in the transcription and response times. Adding some error handling and reconnection logic for the WebSocket might help mitigate this issue. Overall, it seems like there are multiple factors at play here, and we will need to do some thorough debugging and testing to get to the bottom of the issue and ensure that both profiles are working smoothly without any choppy audio or delayed responses.
+
+

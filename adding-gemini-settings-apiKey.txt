@@ -1,0 +1,10 @@
+Put your attention on project: host-gemini-voice
+Concentrate on the profile: developer-assistant.json
+
+Let's add a settings option for the Gemini ApiKey. This will allow users to input their own API key for Gemini, which can be used for authentication when making requests to the Gemini API.
+To add the Gemini API key settings option, we will need to make changes to the app.html file to include an input field for the API key, and we will also need to update the developer-assistant.json profile to include a new setting for the API key.
+Examine the project: azure-voice-live. This project can be a working example for the pattern to use when adding the Gemini API key settings option to the host-gemini-voice project.
+Look for how the Azure API key is implemented in the azure-voice-live project and use that as a reference for implementing the Gemini API key in the host-gemini-voice project.
+
+This will allow users to input their own API key for Gemini, which can be used for authentication when making requests to the Gemini API.
+

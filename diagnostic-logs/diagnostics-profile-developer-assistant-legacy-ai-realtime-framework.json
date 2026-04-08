@@ -1,0 +1,137 @@
+{
+  "profileId": "developer-assistant",
+  "sessionStatus": "processing",
+  "latestTurn": {
+    "turnNumber": 1,
+    "micChunkCount": 104,
+    "micMaxGapMs": 131,
+    "sentAudioChunkCount": 104,
+    "sentAudioMaxGapMs": 131,
+    "maxEncodeMs": 0,
+    "speechStopToUserTranscriptMs": null,
+    "speechStopToAssistantTranscriptMs": null,
+    "lastAudioToTranscriptMs": 25
+  },
+  "events": [
+    {
+      "timestamp": 1775503477950,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477934,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477917,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477901,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477883,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477868,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477851,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477832,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477815,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477800,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477784,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477766,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477749,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477734,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477717,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477701,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477683,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477669,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477650,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503477634,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    }
+  ]
+}

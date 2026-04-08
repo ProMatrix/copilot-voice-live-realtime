@@ -1,0 +1,310 @@
+There are three significant angular workspaces in this Visual Studio Code workspace (voice-live-realtime.code-workspace). 
+angular workspace1: ai-realtime-framework
+angular workspace2: azure-voice-live 
+angular workspace3: ai-voice-live-realtime
+
+Overview of the workspaces:
+ai-realtime-framework and azure-voice-live are legacy projects that have been around for a while and have stable profiles that are working well.
+These profiles include developer-assistant.json, developer-researcher.json, programming-essentials.json, microsoft-AI-discussion.json, and pdf-extraction.json.
+These profiles are used to configure the behavior of the application for different use cases and provide a good user experience.
+The new workspace, ai-voice-live-realtime, is where we are developing the new host-gemini-voice and host-azure-voice projects.
+The goal is to ensure that all the profiles that are working in the legacy projects are also working correctly in the new projects.
+This involves updating the code to point to the new location, and thoroughly testing to ensure that everything is functioning as expected.
+By doing this, we can provide a consistent experience across both projects and make it easier to manage and maintain the profiles in the future.
+
+We added a diagnostics panel to the host-gemini-voice project to help us identify and troubleshoot issues more effectively.
+This panel provides real-time feedback on various events and processes within the application, allowing us to quickly pinpoint where problems may be occurring.
+By using this diagnostics panel, we can improve our debugging process and ensure that any issues with the profiles or other features are resolved efficiently, ultimately enhancing the overall user experience.
+
+I added a new branch to each of the legacy projects (ai-realtime-framework and azure-voice-live) called just-for-designing.
+This branch is intended to be used as a reference for designing the new host-gemini-voice and host-azure-voice projects in the ai-voice-live-realtime workspace.
+By having this branch, we can easily compare the code and profiles from the legacy projects with the new projects,
+ensuring that we maintain consistency and functionality across all platforms.
+This will help us identify any discrepancies or issues that may arise during the development process and allow us to address them effectively.
+
+The files listed below are the "golden" profiles that are working in the legacy projects: ai-realtime-framework and azure-voice-live.
+These profiles are crucial for the functionality of the application and serve as a benchmark for ensuring that the new host-gemini-voice and host-azure-voice projects in the ai-voice-live-realtime workspace are working correctly.
+1. developer-assistant.json
+2. developer-researcher.json
+3. programming-essentials.json
+4. microsoft-AI-discussion.json
+5. pdf-extraction.json
+
+Let's get these profiles working in this order in the new host-gemini-voice and host-azure-voice projects, ensuring that all features and functionalities are intact and that the user experience is consistent across both the legacy and new projects.
+This will involve updating the code to reference the new location of the profiles, testing each profile thoroughly, and using the diagnostics panel to identify and resolve any issues that may arise during this process.
+By doing this, we can ensure a smooth transition from the legacy projects to the new projects while maintaining the high standards of functionality and user experience that our users expect.
+
+We will focus on the host-gemini-voice project first, ensuring that all profiles are correctly integrated and functioning as expected.
+Then we will move on to the host-azure-voice project, applying the same process to ensure that all profiles are working correctly in that project as well.
+This systematic approach will help us maintain consistency and ensure that both projects are fully functional with all the necessary profiles in place,
+providing a seamless experience for our users regardless of which project they are using.
+By following this plan, we can effectively manage the transition and ensure that both the host-gemini-voice and host-azure-voice projects are successful in delivering the features and functionalities that our users rely on.
+
+Before implementation, examine these instructions and respond with questions or clarifications you may have about the instructions provided.
+This will help ensure that you have a clear understanding of the tasks at hand and can proceed with confidence in implementing the necessary changes to get the profiles working in the new host-gemini-voice and host-azure-voice projects.
+If there are any specific areas of the instructions that are unclear or if you need further information on any aspect of the process, please feel free to ask for clarification before moving forward with the implementation.
+___
+I believe that I fixed the problem with the missing profiles in the host-gemini-voice project.
+For the host-gemini-voice project, the ai-realtime-framework project will serve as the primary reference for how to implement and integrate the profiles correctly.
+For the host-azure-voice project, the azure-voice-live project will be the main reference for ensuring that the profiles are integrated properly and functioning as expected.
+First implement the host-gemini-voice project, ensuring that all profiles are working correctly and that the diagnostics panel is effectively helping to identify and resolve any issues that arise during the implementation process.
+After successfully implementing the host-gemini-voice project and ensuring that all profiles are working correctly, move on to the host-azure-voice project.
+Don't try encapsulate functionality for the new projects in a shared library until both projects are fully functional and all profiles are working correctly in each project.
+This will allow us to focus on getting each project working correctly on its own before we start trying to abstract and share functionality between the two projects.
+Once both projects are fully functional and all profiles are working correctly, we can then look into creating a shared library to encapsulate common functionality and make it easier to maintain and manage the codebase across both projects.
+
+Before implementation, examine these instructions and respond with questions or clarifications you may have about the instructions provided.
+This will help ensure that you have a clear understanding of the tasks at hand and can proceed with confidence in implementing the necessary changes to get the profiles working in the new host-gemini-voice and host-azure-voice projects.
+If there are any specific areas of the instructions that are unclear or if you need further information on any aspect of the process, please feel free to ask for clarification before moving forward with the implementation.
+___
+1.
+The profile "works correctly" if it passes all unit and regression testing that we've defined for it, and if it doesn't cause any issues such as errors or regressions in the existing functionality of the host-gemini-voice project.
+I will manually test make sure achieves the goal of the profile.
+2.
+Yes, stop after the first 5 profiles. Then we'll move on to the host-azure-voice project with the same profiles.
+3.
+Please favor the legacy project. It has been tested and has the expected behavior.
+4.
+But to be in place in order to validate The new projects work with the legacy projects.
+If you recommend We can wait until we need the panel in the legacy projects before implementing the panel in the legacy projects. Currently they're in a branch specifically for this implementation.
+5.
+Rely primarily on build/test plus targeted runtime checks.
+6.
+Yes, wait for a sign-off.
+
+Major Cadence Milestone:
+1.If you think it will be helpful, incorporate the diagnostics panel into the legacy projects (ai-realtime-framework and azure-voice-live)
+2. Get the first 5 profiles working in the host-gemini-voice project, ensuring that all unit and regression tests pass and that there are no issues or regressions in the existing functionality of the project.
+3. Get the first 5 profiles working in the host-azure-voice project, ensuring that all unit and regression tests pass and that there are no issues or regressions in the existing functionality of the project.
+4. Encapsulate common functionality in a shared library after both projects are fully functional and all profiles are working correctly, to improve maintainability and reduce code duplication across both projects.
+
+Minor Cadence Milestone:
+2.a. implement the host-gemini-voice project to ensure that it achieves its intended goals and provides the expected user experience using the developer-assistant.json profile.
+2.b. implement the host-gemini-voice project to ensure that it achieves its intended goals and provides the expected user experience using the developer-researcher.json profile.
+2.c. implement the host-gemini-voice project to ensure that it achieves its intended goals and provides the expected user experience using the programming-essentials.json profile.
+2.d. implement the host-gemini-voice project to ensure that it achieves its intended goals and provides the expected user experience using the microsoft-AI-discussion.json profile.
+2.e. implement the host-gemini-voice project to ensure that it achieves its intended goals and provides the expected user experience using the pdf-extraction.json profile.
+3.a. implement the host-azure-voice project to ensure that it achieves its intended goals and provides the expected user experience using the developer-assistant.json profile.
+3.b. implement the host-azure-voice project to ensure that it achieves its intended goals and provides the expected user experience using the developer-researcher.json profile.
+3.c. implement the host-azure-voice project to ensure that it achieves its intended goals and provides the expected user experience using the programming-essentials.json profile.
+3.d. implement the host-azure-voice project to ensure that it achieves its intended goals and provides the expected user experience using the microsoft-AI-discussion.json profile.
+3.e. implement the host-azure-voice project to ensure that it achieves its intended goals and provides the expected user experience using the pdf-extraction.json profile.
+
+Before implementation, examine these instructions and respond with questions or clarifications you may have about the instructions provided.
+This will help ensure that you have a clear understanding of the tasks at hand and can proceed with confidence in implementing the necessary changes to get the profiles working in the new host-gemini-voice and host-azure-voice projects.
+If there are any specific areas of the instructions that are unclear or if you need further information on any aspect of the process, please feel free to ask for clarification before moving forward with the implementation.
+___
+1.
+Maintain these tests during implementation, and we may need to add some new tests as we're going through this exercise.
+"test:image-share", "test:profiles" and "test:smoke"
+2.
+If you can run each profile programmatically verify that it achieves its intended goals and provides the expected user experience, that would be ideal.
+
+Before implementation, examine these instructions and respond with questions or clarifications you may have about the instructions provided.
+This will help ensure that you have a clear understanding of the tasks at hand and can proceed with confidence in implementing the necessary changes to get the profiles working in the new host-gemini-voice and host-azure-voice projects.
+If there are any specific areas of the instructions that are unclear or if you need further information on any aspect of the process, please feel free to ask for clarification before moving forward with the implementation.
+___
+
+Let's move forward with your recommendation and we can begin when you are ready.
+___
+
+We inherited a problem in the host-gemini-voice project where when we click the startRecordingButton for the developer-assistant.json profile.
+This profile starts with the Assistant greeting the user and asking "Are you ready?"
+When the user says something like "yes I'm ready," it takes a long time for the transcription to appear and for the assistant to respond.
+
+That's why it may help to implement a diagnostics panel in the project: ai-realtime-framework
+___
+
+Adjust the diagnostic json file name to help identify the source: profile the platform So something like:
+profile: developer-assistant legacy: ai-realtime-framework 
+diagnostics-profile-developer-assistant-legacy-ai-realtime-framework.json
+diagnostics-profile-developer-researcher-legacy-azure-voice-live.json
+And then I will download the diagnostic files and dump those files into a directory called diagnostics-logs and we can use those logs to analyze the behavior of the profiles in the legacy projects and compare them to the new projects to identify any discrepancies or issues that may arise during the implementation process.
+This will help us ensure that the new host-gemini-voice and host-azure-voice projects are working correctly and providing the expected user experience based on the behavior of the profiles in the legacy projects.
+
+___
+
+If I had to guess from what I'm seeing I would say that probably the two projects are not being initializing and utilizing in exactly the same way. I've seen this kind of issue before where it seems like it would work either way when in fact there is an order to the best performance to start up a service.
+There's no reason these two projects shouldn't have the same dianostic metrics. Expand on those metrics if it's necessary there's no reason we can't track more.
+
+
+___
+There is a problem with the profile: microsoft-AI-discussion
+It starts out OK but stop being sequenced after a while and then the user agent starts responding while the assistant is still speaking.
+I'm guessing any profile that uses pre_recorded in the profile has this problem.
+___
+
+All five profiles are working in the host-gemini-voice project and the diagnostics panel is providing valuable insights into the behavior of the application, allowing us to identify and resolve any issues that arise during testing.
+Now we can move on to the host-azure-voice project and apply the same process to ensure that all profiles are working correctly in that project as well.
+By following the same steps and utilizing the diagnostics panel, we can ensure that the host-azure-voice project is also fully functional with all profiles working correctly, providing a consistent and seamless experience for users across both projects.
+
+___
+
+After I click the startRecordingButton nothing happens, until some time later I received this warning in the console:
+live-interface.service.ts:3316 [LiveInterfaceService] Timed out waiting for live assistant setup before microphone start.
+___
+That fixed a lot of things there's one thing that I noticed:
+I don't see the dialog bubble for the user's input. This bubble should appear fairly quickly after the user starts speaking and stay there until the user is finished speaking and the message is then sent to that assistant.
+The user does hear the message though and all of that is working it's just the visual esthetics is not working as designed.
+Just to be clear the assistants dialog bubble is showing up just as you would expect it to.
+
+___
+Once the user begins speaking the bubble appears but no text is added to the bubble, even when the user is finished speaking. And also the speech is never added to the history.
+___
+
+That fixed the last issue here's another issue.
+If a profile has:
+    "clear_session_on_startup": true,
+This means session should be cleared when the profile is loaded and the application is started up. However, it seems like this is not happening as expected in the host-gemini-voice project.
+This could lead to issues where previous session data is still present when a new profile is loaded,which could cause unexpected behavior or errors in the application.
+We need to investigate why the session is not being cleared on startup when this setting is enabled in the profile and ensure that it is working correctly to provide a clean slate for each new session when a profile is loaded.
+This will help ensure that the application behaves as expected and that users have a consistent experience when loading different profiles in the host-gemini-voice project.    
+___
+I guess I should have mentioned that we also need to clear the history and any other relevant session data when "clear_session_on_startup" is set to true in the profile. This means that not only should the session be cleared, but also the chat history and any other in-memory state that could affect the new session. We need to ensure that all of this is happening correctly when a profile with this setting is loaded, so that users can start fresh without any residual data from previous sessions affecting their experience. This will help maintain the integrity of each session and provide a better user experience overall in the host-gemini-voice project.
+Currently if I restart after loading a profile with "clear_session_on_startup" set to true, I can still see the previous chat history and session data, which indicates that the clearing process is not working as intended. We need to investigate the code responsible for handling this setting and ensure that it is properly clearing all relevant data when a new session is started with this profile. This may involve adding additional logic to clear the chat history service, resetting any in-memory state, and ensuring that the live assistant service is also reset appropriately to provide a clean slate for the new session. By doing this, we can ensure that users have a consistent and expected experience when loading profiles with this setting enabled in the host-gemini-voice project.
+___
+I Should not see a chat history whenever I load this profile.
+This profile has "clear_session_on_startup": true
+So if I load this profile and then check the chat history, it should be empty. If I see any previous messages in the chat history, that means that the session clearing process is not working correctly and we need to investigate and fix the issue to ensure that the chat history is properly cleared when this profile is loaded in the host-gemini-voice project. This will help maintain a clean and consistent user experience when using profiles with this setting enabled.
+Fix this issue
+
+___
+
+The functions folder and the implementation needs to be added to the project: host-azure-voice. Use the project: azure-voice-live as an example.
+Also add a script to start up the functions in the same way as the project: azure-voice-live does, and ensure that the functions are properly integrated and working correctly in the host-azure-voice project.
+
+Do you have any questions before beginning the implementation?
+
+___
+1.
+Yes it's a Firebase Functions. Port everything over exactly the same. At the moment I'm just creating a new home for the functions. They should work exactly the same.
+2.
+Yes, we want everything to work the same way it did previously with the exception that it has a new location.
+This may mean that the angular.Json file needs to be updated to include the new location of the functions and any relevant configuration settings that are necessary for the functions to work correctly in the host-azure-voice project. 
+3.
+All the scripts for start and deploy the functions should be the same as in the azure-voice-live project, just updated to point to the new location of the functions in the host-azure-voice project.
+This will ensure that we can easily manage and deploy the functions without any issues, and that they are properly integrated into the new project while maintaining the same functionality as before.
+4.
+Yes, it is incorrect. Fix it!
+
+___
+
+Hosting is working great in the host-azure-voice project, and the functions have been successfully ported over but are not working correctly.
+Voice integration is working perfect but the vision integration is not working at all. When the user tries to use any of the vision features, the assistant assistant responds with an error message indicating that there was an issue with the vision integration. This is likely due to a problem with the configuration or implementation of the vision features in the host-azure-voice project, which may not have been properly updated to reflect the new location of the functions or may have some other issue that is preventing it from working correctly. We need to investigate the code responsible for the vision integration and ensure that it is properly configured and implemented to work correctly in the host-azure-voice project, so that users can utilize all of the features of the application without any issues.
+Fix it, and add some test cases to ensure that the functions are working correctly in the host-azure-voice project, and that they are providing the expected functionality as they did in the azure-voice-live project.
+
+___
+
+When the user asked the assistant "Can you see my screen?" The assistant is responding "Can you see my screen?".
+Do we yet test for if the back-end is online?
+Can we know if functions are working correctly from the front-end? If not, we should add some checks to ensure that the front-end can detect if the back-end functions are not working correctly and provide appropriate feedback to the user, such as an alert error message.
+___
+
+Yes, and just to let you know there's still a problem with the vision integration in the host-azure-voice project.
+When the user tries to use any of the vision features, the assistant responds with The answer that's obvious that the Assistant cannot my screen.
+Check the vision and the voice instructions in the host-azure-voice project and compare them to the azure-voice-live project to identify any discrepancies or issues that may be causing the vision integration to not work correctly.
+This may involve checking the configuration settings, the implementation of the vision features, and ensuring that all necessary dependencies and services are properly set up and integrated into the host-azure-voice project.
+By doing this, we can identify and resolve any issues with the vision integration and ensure that it is working correctly in the host-azure-voice project, providing a seamless experience for users who want to utilize the vision features of the application.
+
+___
+
+There's still a problem with the vision integration in the host-azure-voice project.
+Most likely the issue has something to do with the startup execution path for the host-azure-voice project not being the same as the azure-voice-live project, which may be causing certain services or dependencies related to the vision integration to not be initialized or configured correctly when the application starts up. We need to carefully compare the startup execution paths of both projects and identify any differences that may be affecting the vision integration, and then make the necessary adjustments to ensure that the vision features are properly initialized and working correctly in the host-azure-voice project. This will help ensure that users can utilize all of the features of the application without any issues, and that the vision integration is functioning as expected in the new project.
+This is the startup order for doing my manual testing.
+In the project: ai-voice-live-realtime
+1. Start the functions using the command: npm run serve-functions
+2. Start the hosting using the command: npm run serve-hosting
+3. Open the application in the browser using the command: npm run edge-local-azure
+Make sure to follow this order when starting the application to ensure that all services and dependencies are properly initialized and that the application is working correctly, especially with regards to the vision integration in the host-azure-voice project.
+By starting the functions first, we can ensure that the back-end services are up and running before we start the hosting and open the application in the browser, which will help prevent any issues related to services not being available when the application tries to use them.
+This will also allow us to effectively test the vision integration and identify any issues that may arise during startup, so that we can address them and ensure that the vision features are working correctly in the host-azure-voice project.
+
+___
+Now vision seems to be working. Good job!
+I want to see alert dialog if the back-end is not working correctly, so that users can be informed of any issues with the back-end services that may affect the functionality of the application, especially with regards to the vision integration in the host-azure-voice project. This will help improve the user experience by providing clear feedback when there are issues with the back-end, and allow users to take appropriate action or understand why certain features may not be working as expected.
+I'm going to run the app again without starting the functions and I expect to see a dialog box alerting me that the back-end is not working correctly, which will confirm that the error handling for back-end issues is functioning as intended in the host-azure-voice project. This will help ensure that users are properly informed of any issues and can understand the state of the application when there are problems with the back-end services.
+Will that work now or is there something that needs to be implemented in order for that to work correctly?
+___
+
+I want to see the alert dialog when I start the application without starting the functions, which indicates that the error handling for back-end issues is working correctly in the host-azure-voice project. This means that users will be properly informed if there are any issues with the back-end services, allowing them to understand why certain features may not be working and take appropriate action. This is an important aspect of providing a good user experience, as it helps users feel informed and in control of the application,
+even when there are issues that may affect its functionality. By having this alert dialog in place, we can ensure that users have a better experience and can effectively navigate any problems that may arise with the back-end services in the host-azure-voice project.
+You can also some kind of a flag or indicator in the diagnostics panel that shows the status of the back-end services, so that we can easily see from the diagnostics whether the back-end is working correctly or if there are any issues that need to be addressed. This will provide additional visibility into the state of the application and help us quickly identify and resolve any problems with the back-end services, especially during testing and development of the host-azure-voice project.
+
+
+___
+
+We fixed it! But here is another problem... It's not new I just didn't mention it before.
+I hear a problem with the audio from the assistant.
+It sounds like pops and crackles, which could indicate an issue with the audio processing or the way the audio is being generated and played back in the host-azure-voice project.
+I have heard a similar issue in my experience where there is a mismatch with sample rates or some kind of issue with the audio encoding or decoding process, which can lead to poor audio quality and artifacts like pops and crackles.
+We need to investigate the audio processing pipeline and ensure that it is properly configured and implemented to provide clear and high-quality audio output from the assistant. This may involve checking the audio generation code, the audio playback implementation, and any relevant configuration settings that could affect the audio quality. By doing this, we can identify and resolve any issues with the audio output and ensure that users have a better experience when interacting with the assistant in the host-azure-voice project.
+
+___
+I'm seeing this alert "Error: Voice API Endpoint is required!" when I start the host-gemini-voice project, even though host-gemini-voice project never uses or needs the vision because with the Google Live API it's all built into the same API.
+___
+
+It's very subtle and hard to detect but I think it's still is distored.
+Not sure it's a clue but I don't seem to hear the same problem from the headphones that I hear in the speakers. And I know my speakers work good
+___
+
+The audio for the project host-gemini-voice is distorted with pops and crackles, which could indicate an issue with the audio processing or the way the audio is being generated and played back in the host-azure-voice project.
+This issue may be related to a mismatch with sample rates, an issue with the audio encoding or decoding process, or some other problem with the audio pipeline in the host-azure-voice project.
+We need to investigate the audio processing pipeline in the host-azure-voice project and ensure that it is properly configured and implemented to provide clear and high-quality audio output from the assistant.
+This may involve checking the audio generation code, the audio playback implementation, and any relevant configuration settings that could affect the audio quality. By doing this, we can identify and resolve any issues with the audio output and ensure that users have a better experience when interacting with the assistant in the host-azure-voice project.
+It's actually better that both projects have the same problem because then we can be sure that the issue is not related to a specific implementation in one project, but rather something that is common to both projects, which may help us narrow down the potential causes of the audio distortion and identify a solution that can be applied to both projects to improve the audio quality for users.
+Now let's concentrate on the project: project host-gemini-voice since it is easier to test and iterate on changes in that project, and then we can apply any fixes or improvements to the host-azure-voice project once we have identified the cause of the audio distortion and implemented a solution in the host-gemini-voice project. This will allow us to efficiently address the audio quality issue and ensure that both projects provide a good user experience with clear and high-quality audio output from the assistant.
+
+___
+
+I just tried the legacy project: ai-realtime-framework.
+I don't hear the same audio distortion issue with the assistant's voice in that project, which suggests that there may be a specific issue with the audio processing or configuration in the host-gemini-voice and host-azure-voice projects that is not present in the ai-realtime-framework project. This could help us narrow down the potential causes of the audio distortion and focus our investigation on the differences between the legacy project and the new projects to identify what might be causing the issue and how to resolve it to improve the audio quality in both the host-gemini-voice and host-azure-voice projects.
+I understand how important it is to encapsulate logic and share logic between these two new projects, but let's first focus on getting both projects fully functional and ensuring that all profiles are working correctly in each project before we start trying to abstract and share functionality between the two projects.
+This will allow us to identify any specific issues or differences in the implementation of each project that may be contributing to the audio distortion issue, and address those issues directly in each project before we start trying to create a shared library or abstraction layer. Once both projects are fully functional and all profiles are working correctly, we can then look into creating a shared library to encapsulate common functionality and make it easier to maintain and manage the codebase across both projects, while ensuring that any specific issues related to audio quality have been addressed in each project individually first.
+
+___
+OK Great! now do we have enough information to fix the project: host-azure-voice?
+___
+
+OK, here is another issue that I just noticed. The profile: developer-researcher.json has a setting called "clear_session_on_startup" which is set to false. This means that when this profile is loaded and the application is started up, the session should not be cleared and any previous session data should still be present. However, it seems like this setting is not being respected in the host-azure-voice project, and the session is being cleared on startup even when this setting is set to false. We need to investigate why this is happening and ensure that the "clear_session_on_startup" setting is working correctly in the host-azure-voice project, so that users can have a consistent experience based on the settings defined in their profiles. This will help maintain the integrity of each session and provide a better user experience overall in the host-azure-voice project.
+Use the project: azure-voice-live as a reference for how the "clear_session_on_startup" setting should be implemented and ensure that the host-azure-voice project is updated to reflect the correct behavior based on this setting in the developer-researcher.json profile. This will help ensure that users have the expected experience when loading this profile and that any previous session data is preserved or cleared appropriately based on the settings defined in the profile. By doing this, we can improve the user experience and ensure that the host-azure-voice project is functioning correctly with respect to session management based on profile settings.
+___
+
+
+
+
+___
+
+
+
+
+___
+
+Notes:
+developer-researcher.json
+azure-voice-live
+host-azure-voice
+    "clear_session_on_startup": false,
+
+
+
+___
+
+*** Bonus:
+let's upgrade to the latest version of Firebase Functions & Hosting SDK and make sure that all the dependencies are up to date in the host-azure-voice project, to ensure that we are using the latest features and improvements from the Firebase platform, and to help resolve any potential issues that may arise from using outdated dependencies. This will also help improve the overall performance and stability of the functions in the host-azure-voice project, providing a better experience for users who rely on these features.
+
+___
+I want to add a logo image for both the host-gemini-voice and host-azure-voice projects, to help visually differentiate the two projects and provide a more branded experience for users.
+This logo can be displayed in the location of the share-screen button, since it only shows once the startPlaybackButton is clicked,
+and should be designed to reflect the identity of each project while maintaining a consistent style across both projects. By adding a logo, we can enhance the visual appeal of the applications and make it easier for users to recognize which project they are using at a glance.
+___
+
+First, add a button for the diagnostics panel to show and hide it. It can be on the right side of the settings button. Then remove the hide and show button from within the diagnostics panel.
+Next Comm move the diagnostics panel to the blank???
+
+___
+
+
+___
+
+
+___

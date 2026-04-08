@@ -1,0 +1,137 @@
+{
+  "profileId": "developer-assistant-session",
+  "sessionStatus": "recording",
+  "latestTurn": {
+    "turnNumber": 1,
+    "micChunkCount": 1013,
+    "micMaxGapMs": 32,
+    "sentAudioChunkCount": 769,
+    "sentAudioMaxGapMs": 3930,
+    "maxEncodeMs": 0,
+    "speechStopToUserTranscriptMs": 1592,
+    "speechStopToAssistantTranscriptMs": 3909,
+    "lastAudioToTranscriptMs": 1596
+  },
+  "events": [
+    {
+      "timestamp": 1775503569820,
+      "source": "LiveInterface",
+      "message": "Assistant turn completed from playback stop fallback.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503569570,
+      "source": "LiveInterface",
+      "message": "Assistant audio playback stopped.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503567103,
+      "source": "LiveInterface",
+      "message": "Assistant transcript started after 3909ms.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503564786,
+      "source": "LiveInterface",
+      "message": "User transcript started after 1592ms.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503563194,
+      "source": "Gemini",
+      "message": "Sent audioStreamEnd to flush the user turn.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503563194,
+      "source": "LiveInterface",
+      "message": "Speech detector flushed the Gemini user turn.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503563194,
+      "source": "LiveInterface",
+      "message": "User speech stopped; waiting for transcription.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503561694,
+      "source": "LiveInterface",
+      "message": "Scheduled Gemini user-turn flush after speech stop.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503561694,
+      "source": "LiveInterface",
+      "message": "Speech detector reported silence.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503559926,
+      "source": "LiveInterface",
+      "message": "Turn 1 started: speech-detected",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503558041,
+      "source": "LiveInterface",
+      "message": "Assistant turn completed from playback stop fallback.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503557790,
+      "source": "LiveInterface",
+      "message": "Assistant audio playback stopped.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503554812,
+      "source": "LiveInterface",
+      "message": "Assistant transcript started.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553280,
+      "source": "Audio",
+      "message": "Worklet Initialized. NativeSR: 48000, TargetSR: 16000, Ratio: 3",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553279,
+      "source": "LiveInterface",
+      "message": "Recording started.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553279,
+      "source": "Audio",
+      "message": "Microphone ready at 16000Hz with 32ms chunks.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553229,
+      "source": "Audio",
+      "message": "Worklet Initialized. NativeSR: 48000, TargetSR: 16000, Ratio: 3",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553228,
+      "source": "Audio",
+      "message": "Microphone ready at 16000Hz with 32ms chunks.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553151,
+      "source": "LiveInterface",
+      "message": "Setup complete. Ready to talk or upload image.",
+      "level": "info"
+    },
+    {
+      "timestamp": 1775503553151,
+      "source": "Gemini",
+      "message": "Setup complete.",
+      "level": "info"
+    }
+  ]
+}
